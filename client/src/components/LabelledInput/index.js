@@ -7,6 +7,7 @@ export const LabelledInputEmailType = "email";
 function LabelledInput({
   type = LabelledInputTextType,
   label = false,
+  required = false,
   name,
   handleInputChange,
 }) {
@@ -19,7 +20,12 @@ function LabelledInput({
       {type === "submit" ? (
         <input type={type} />
       ) : (
-        <input name={name} type={type} onChange={handleChange} />
+        <input
+          name={name}
+          type={type}
+          required={required}
+          onChange={handleChange}
+        />
       )}
     </>
   );

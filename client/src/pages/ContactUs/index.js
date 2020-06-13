@@ -43,6 +43,7 @@ function ContactUs() {
           <LabelledInput
             label={"Name:"}
             name={"name"}
+            required={true}
             type={LabelledInputTextType}
           />
           <LabelledInput
