@@ -3,7 +3,12 @@ import Form from "../../components/Form";
 import LabelledInput, {
   LabelledInputTextType,
   LabelledInputSubmitType,
+  LabelledInputEmailType,
 } from "../../components/LabelledInput";
+import LabelledTextArea, {
+  LabelledTextAreaCols,
+  LabelledTextAreaRows,
+} from "../../components/LabelledTextArea";
 import "./App.css";
 
 function App() {
@@ -35,23 +40,52 @@ function App() {
         <p>{data.message}</p>
 
         <Form>
-          <LabelledInput label={"Name:"} type={LabelledInputTextType} />
+          <LabelledInput
+            label={"Name:"}
+            name={"name"}
+            type={LabelledInputTextType}
+          />
           <LabelledInput
             label={"Address line 1:"}
+            name={"address_line_1"}
             type={LabelledInputTextType}
           />
           <LabelledInput
             label={"Address line 2:"}
+            name={"address_line_2"}
             type={LabelledInputTextType}
           />
-          <LabelledInput label={"County:"} type={LabelledInputTextType} />
-          <LabelledInput label={"Postcode:"} type={LabelledInputTextType} />
+          <LabelledInput
+            label={"City:"}
+            name={"city"}
+            type={LabelledInputTextType}
+          />
+          <LabelledInput
+            label={"County:"}
+            name={"county"}
+            type={LabelledInputTextType}
+          />
+          <LabelledInput
+            label={"Postcode:"}
+            name={"postcode"}
+            type={LabelledInputTextType}
+          />
           <LabelledInput
             label={"Telephone number:"}
+            name={"telephone_number"}
             type={LabelledInputTextType}
           />
-          <LabelledInput label={"Email:"} type={LabelledInputTextType} />
-          <LabelledInput label={"Message:"} type={LabelledInputTextType} />
+          <LabelledInput
+            label={"Email:"}
+            name={"email"}
+            type={LabelledInputEmailType}
+          />
+          <LabelledTextArea
+            label={"Message:"}
+            name={"message"}
+            rows={LabelledTextAreaRows}
+            cols={LabelledTextAreaCols}
+          />
           <LabelledInput type={LabelledInputSubmitType} />
         </Form>
       </header>

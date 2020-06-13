@@ -14,7 +14,8 @@
     "stop": "yarn run stop-server",
     "start-client": "cd client && yarn start",
     "start-server": "cd server && yarn start",
-    "stop-server": "cd server && yarn stop"
+    "stop-server": "cd server && yarn stop",
+    "seed-data": "cd server && yarn seed-data"
   },
   "dependencies": {
     "concurrently": "^4.1.0"

@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS `jstest`.`submissions` (
   `name` VARCHAR(255) NULL,
   `address1` VARCHAR(255) NULL,
   `address2` VARCHAR(255) NULL,
+  `city` VARCHAR(255) NULL,
   `county` VARCHAR(255) NULL,
   `postcode` VARCHAR(45) NULL,
   `telephone_number` VARCHAR(45) NULL,
